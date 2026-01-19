@@ -1,3 +1,9 @@
-Very simple library to allow accessing an inner field containing a Mutex from the front end Struct.
+derive trait library to allow accessing an inner field containing a Mutex from the front end Struct.
 
-See documentation for example.
+## Example
+
+See the [derive tests](/struct_zero_egui/tests/derive.rs).
+
+## TODO
+
+write documentation

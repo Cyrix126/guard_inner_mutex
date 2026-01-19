@@ -1,18 +1,6 @@
-[package]
-name = "guard_inner_mutex"
-version = "0.1.0"
-edition = "2024"
-
-description = "Boilerplate trait to access an inner mutex"
-publish = false
-repository = "https://github.com/Cyrix126/guard_inner_mutex"
-license = "GPL-3.0-only"
-readme = "README.md"
-authors = ["Cyrix126 <cyrix126@baermail.fr>"]
-keywords = ["mutew", "deref"]
-
-[lib]
-
-[dependencies]
-parking_lot = "0.12"
-
+[workspace]
+resolver = "2"
+members = [
+  "guard_inner_mutex",
+  "guard_inner_mutex_derive",
+]

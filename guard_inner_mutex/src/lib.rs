@@ -1,9 +1,13 @@
+// ![doc = include_str!("../README.md")]
 use std::ops::{Deref, DerefMut};
 
 use parking_lot::{MappedMutexGuard, MutexGuard};
 
+#[cfg(feature = "derive")]
+pub extern crate guard_inner_mutex_derive;
+
 /// Generic struct as a front end put to the inner struct
-pub struct InnerGuard<'a, I>(MutexGuard<'a, I>);
+pub struct InnerGuard<'a, I>(pub MutexGuard<'a, I>);
 
 impl<'a, I> Deref for InnerGuard<'a, I> {
     type Target = I;

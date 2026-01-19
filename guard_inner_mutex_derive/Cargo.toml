@@ -1,0 +1,22 @@
+[package]
+name = "guard_inner_mutex_derive"
+version = "0.1.0"
+edition = "2024" 
+description = "macro derive for guard inner mutex" 
+publish = false # TODO
+repository = "https://github.com/Cyrix126/guard_inner_mutex"
+license = "GPL-3.0-only"
+readme = "README.md" 
+authors = ["Cyrix126 <cyrix126@gupax.io>"]
+keywords = ["derive", "mutex"]
+categories = ["derive"]
+include = ["./src"] 
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = "2.0"
+quote = "1.0"
+darling = "0.23"
+proc-macro2 = "1.0"
