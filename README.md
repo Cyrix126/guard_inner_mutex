@@ -2,7 +2,7 @@ derive trait library to allow accessing an inner field containing a Mutex from t
 
 ## Example
 
-See the [derive tests](/struct_zero_egui/tests/derive.rs).
+See the [derive tests](/guard_inner_mutex/tests/derive.rs).
 
 ## TODO
 
